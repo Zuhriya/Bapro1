@@ -1,0 +1,79 @@
+package finalproject;
+
+import java.util.Scanner;
+
+public class Utama {
+    static Scanner sc=new Scanner (System.in);
+    static int b,c, main1;
+    void mulai(){
+        System.out.println("-+-+-+-+-+-+-+-");
+        System.out.println("   WHO AM I ?  ");
+        System.out.println("-+-+-+-+-+-+-+-");
+        WhoAmI you=new WhoAmI();
+        System.out.println("1. Gaya Belajar yang Cocok Buat Anda");
+        System.out.println("2. Tipe Cinta Anda");
+        System.out.println("3. Karakter Anda Berdasarkan Sudut Pandang Situasi");
+        System.out.println("4. Karakter Anda Berdasarkan Bentuk Wajah");
+        System.out.println("5. Karakter Cinta Anda Berdasarkan Hewan Pilihan");
+        System.out.print ("Input Nomor : ");
+         main1= sc.nextInt();
+            switch(main1){
+                case 1: 
+                    Kategori1 case1=new Kategori1();
+                    case1.Soal1();
+                    break;
+                case 2: 
+                    Kategori2 case2=new Kategori2();
+                    case2.Soal2();
+                    break;
+                case 3:
+                    Kategori3 case3=new Kategori3();
+                    case3.Soal3(); 
+                    break;
+                case 4:
+                    Kategori4 case4=new Kategori4();
+                    case4.Soal4(); 
+                    break;
+                case 5: 
+                    Kategori5 case5=new Kategori5();
+                    case5.Soal5(); 
+                    break;
+                default:
+                    while (main1>5||main1<1){
+                        System.out.println("Angka tidak valid, masukkan lagi"); 
+                         main1 = sc.nextInt();
+                        switch (main1){
+                            case 1: 
+                                Kategori1 case21=new Kategori1();
+                                case21.Soal1();
+                                break;
+                            case 2: 
+                                Kategori2 case22=new Kategori2();
+                                case22.Soal2();
+                                break;
+                            case 3:
+                                Kategori3 case23=new Kategori3();
+                                case23.Soal3(); 
+                                break;
+                            case 4:
+                                Kategori4 case24=new Kategori4();
+                                case24.Soal4(); 
+                                break;
+                            case 5: 
+                                Kategori5 case25=new Kategori5();
+                                case25.Soal5(); 
+                                break;
+                            default: break;
+                        }
+                    }
+            }
+        }
+    
+    
+    
+    public static void main (String []args){
+        Utama start=new Utama();
+        start.mulai();
+    }
+} 
+
